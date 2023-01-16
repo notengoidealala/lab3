@@ -23,6 +23,7 @@ nav{
   text-align: left;
   background-color: gray;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 ul{
@@ -30,8 +31,8 @@ ul{
 }
 
 .hamburger{
-  display: left;
-  justify-content: flex-end;
+  display: flex;
+  justify-content: right;
   color: white;
 }
 
@@ -54,14 +55,57 @@ ul{
 
 /* iPads */
 @media(min-width: 768px) and (max-width: 1024px){
-  body{
-    background-color: red;
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  nav{
+    background-color: rgb(105,105,105);
+  }
+  p{
+    text-align: left;
   }
 } 
 
 /* Large screen */
 @media(min-width: 1025px){
-  body{
-    background-color: blue;
+  header {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 300px;
+  }
+  .hamburger{
+    display: none;
+  }
+  .menu{
+    display:flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    justify-content:flex-end;
+  }
+  .displayMenu{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  nav{
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    background-color: rgb(105,105,105);
+  }
+  .product{
+    border: solid;
+    border-width: 1px;
+    border-color: gray;
+    text-align: center;
+    flex-wrap:wrap;
+    flex-direction: row;
+  }
+  p{
+    text-align: left;
   }
 } 
