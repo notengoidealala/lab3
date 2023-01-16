@@ -97,13 +97,13 @@ ul{
     padding-bottom: 0.5px;
     background-color: rgb(105,105,105);
   }
-  .product{
-    border: solid;
-    border-width: 1px;
-    border-color: gray;
-    text-align: center;
-    flex-wrap:wrap;
+  main{
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
+  }
+  .product{
+    margin-left: 10px;
   }
   p{
     text-align: left;
