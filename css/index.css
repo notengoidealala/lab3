@@ -12,3 +12,56 @@ body {
   width: 50px;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav{
+  text-align: left;
+  background-color: gray;
+  margin-left: 10px;
+}
+
+ul{
+  list-style: none;
+}
+
+.hamburger{
+  display: left;
+  justify-content: flex-end;
+  color: white;
+}
+
+.menu{
+  display: none;
+}
+
+.product{
+  border: solid;
+  border-width: 1px;
+  border-color: gray;
+  text-align: center;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* iPads */
+@media(min-width: 768px) and (max-width: 1024px){
+  body{
+    background-color: red;
+  }
+} 
+
+/* Large screen */
+@media(min-width: 1025px){
+  body{
+    background-color: blue;
+  }
+} 
